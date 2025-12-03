@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web developer</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  background: url(Downloads/bryn-young-F6VI5_Vnxo8-unsplash.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      padding: 20px;
+      max-width: 900px;
+    }
+
+    .image-box {
+      position: relative;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden;
+      animation: pulseBorder 3s infinite;
+      box-shadow: 0 0 50px  #ff0077;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1);
+      filter: brightness(1.0) contrast(1.1);
+      transition: transform 0.6s ease;
+    }
+
+    .image-box:hover img {
+      transform: scale(1.08);
+    }
+
+    @keyframes pulseBorder {
+      0% { box-shadow: 0 0 10px  #ff0077 }
+      50% { box-shadow: 0 0 25px  #ff0077; }
+      100% { box-shadow: 0 0 10px  #ff0077; }
+    }
+
+    .info {
+      flex: 1;
+      min-width: 250px;
+      border: 2px solid  #ff0077;
+      padding: 15px;
+      border-radius: 10px;
+      animation: glowBorder 3s infinite;
+      background: rgba(255, 0, 119, 0.2); /* couleur semi-transparente */
+      backdrop-filter: blur(8px); /* effet flou */
+
+    }
+
+    .info h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color:  #1854b5;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      align-items: center;
+    }
+
+    .info p {
+      font-size: 1rem;
+      line-height: 1.6;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: #ccc;
+
+    }
+
+    @keyframes glowBorder {
+      0% { border-color:  #f80577; box-shadow: 0 0 10px  #ff0080; }
+      50% { border-color:  #ff0077; box-shadow: 0 0 25px  #ff0077; }
+      100% { border-color:  #ff0077; box-shadow: 0 0 10px  #ff0077; }
+    }
+
+    .social-icon {
+      position: relative;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* espace entre les icônes */
+    }
+
+    .social-icon a {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 50px;
+      color: #5808ec;
+      font-size: 20px;
+      width: 45px;
+      height: 45px;
+      background: transparent;
+      border: 2px solid #ff0077;
+      z-index: 1;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+
+    .social-icon a:hover {
+      color: #ebebeb;
+      transform: scale(1.2);
+      box-shadow: 0 0 30px #d9d4d6;
+    }
+
+    .social-icon a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ff0077;
+      z-index: -1;
+      transition: 0.5s;
+    }
+
+    .social-icon a:hover::before {
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-box">
+      <img src="Downloads/websitepic.jpg" alt="Photo de Boutaina">
+    </div>
+    <div class="info">
+      <h1>BOUTAYNA LOUZI :)<br> WEB CREATOR/DESIGNER</h1>
+      <p>
+      
+I am Boutaina Louzi, I'm from Morocco.
+I'm a Computer Science enthusiast specializing in web development.
+Skilled in HTML/CSS, JavaScript, C++, responsive design, and semantic coding,
+I create modern, accessible websites aligned with industry standards. Curious, adaptable, and multilingual, I deliver clear, scalable, and engaging digital solutions.
+
+About Me
+Let' On the technical side, I have experience in programming languages such as Python, CSS, C, C++, and JavaScript, which enables me to design and implement practical solutions for web applications. I approach coding with a focus on structure, responsiveness, and professional standards, ensuring that every project is both functional and visually elegant. Alongside programming, I dedicate myself to web design, where I bring a designer’s eye for detail to layouts, user interfaces, and overall user experience.
+      </p>
+      <div class="social-icon">
+        <a href="https://www.instagram.com/c0mputer_pr0graming?igsh=MXJsZjdmcWdudmV0eg==" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/louzi-boutaina/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        
+        <a href="https://github.com/louziboutayna-aphro/aphrodite.git" target="_blank"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
